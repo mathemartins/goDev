@@ -9,4 +9,10 @@ Notes:
 7. When you want to declare a variable that you will not use in Go, make sure to use the blank identifier known as `_` else you will have a compile time error
 8. The short declaration operator works only in block scopes `s := "Best teacher in the world"`
 9. Cannot use `:=` for already defined variables, if you want to change the value of a named variable you use only the `=` operator
-10. 
+10. Also note that `var (
+    salary float64
+    firstName string
+    gender bool
+    )` is not the same as `var (salary float64 firstName string gender bool)`
+11. In summary use short declaration `:=` when we know the initial value and normal declaration `var` otherwise or any time
+12. Use normal declaration for multiple declaration for clarity
